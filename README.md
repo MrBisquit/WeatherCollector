@@ -1,5 +1,5 @@
 # WeatherCollector
-![Github Banner](images/banner.png.png#gh-dark-mode-only)
+![Github Banner](images/banner.png#gh-dark-mode-only)
 ![Github Banner](images/banner_light.png#gh-light-mode-only)
 
 > [!NOTE]
