@@ -1,4 +1,6 @@
 # WeatherCollector
+![Github Banner](images/banner.png.png#gh-dark-mode-only)
+![Github Banner](images/banner_light.png#gh-light-mode-only)
 
 > [!NOTE]
 > If you're wondering where the code is, I'm slowly going to be cleaning it up and building new bits onto it, since it was originally intended to be for personal-use, if you watch the repository hopefully it'll tell you when I add things to it.
