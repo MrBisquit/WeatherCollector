@@ -1,3 +1,5 @@
+# WeatherCollector
+
 > [!NOTE]
 > If you're wondering where the code is, I'm slowly going to be cleaning it up and building new bits onto it, since it was originally intended to be for personal-use, if you watch the repository hopefully it'll tell you when I add things to it.
 > <br><br>This may take a little while, so please be patient.
