@@ -29,3 +29,18 @@ Here's a list of things you'll need (* = Required)
 - Pimoroni Weather Kit (*)
   - You don't have to use it, but it's what it was built for.
   - [Enviro Weather (Pico W Aboard) - Weather Station Kit](https://shop.pimoroni.com/products/enviro-weather?variant=40056776917075)
+
+
+## What does it come with?
+
+WeatherCollector comes with 2 Frontend UI options (**Old Style UI** is not supported):
+- Old Style UI (Original UI Flavour)
+- New React UI (Better UI Fravour, supported)
+
+It also comes with:
+- A database provider server (Uses PrismaDB)
+- An AI server (Automatic learning, prediction making)
+- Two Frontends (As mentioned above)
+- API server + Authentication
+
+Plus, it's **modular**! Meaning you can pick and choose what you want to use, if you don't like Prisma, you can make your own database provider ([Find out how to](docs/custom-db.md)). If you don't want AI predictions, you don't have to have it. You don't have to have two Raspberry Pis (Although it's recommended), in fact, you don't even need any, you can use whatever supports this, though it may be a little challenging getting things working as I won't write documentation for any of that.
