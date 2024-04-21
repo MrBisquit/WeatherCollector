@@ -2,6 +2,9 @@
 
 On average a picture is 1 MB (Depending on the camera you use, quality and a few other things, but its a rough average.)
 
+> [!NOTE]
+> This is also assuming that you're only using one collector, to calculate how much storage you'll need for multiple collectors, multiply the correct row/column by the amount of collectors.
+
 ## 5 minute data/picture intervals (288 data points/photos)
 | Time    | Size (With pictures) | Size (Without pictures) |
 |:--------|:--------------------:|:-----------------------:|
