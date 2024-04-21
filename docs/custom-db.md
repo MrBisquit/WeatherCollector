@@ -16,6 +16,38 @@ There are a few API routes that need to be completed and working for WeatherColl
 | `/set/data/`           | `POST` | [More info](#set-data-api-route)           |
 | `/set/image/`          | `POST` | [More info](#set-image-api-route)          |
 
+### Registering the database
+For a custom database connector to be recognised, it must send a request to the internal API (Default port: **90**).
+
+To: `/db/register/`
+Method: `POST`
+
+| Item          | Required | Value type |
+|:--------------|:--------:|:-----------|
+| `name`        | Yes      | `string`   |
+| `ip`          | Yes      | `string`   |
+| `port`        | Yes      | `string`   |
+| `version`     | Yes      | `string`   |
+| `description` | Yes      | `string`   |
+| `link`        | Yes      | `string`   |
+
+Expected outcomes:
+```json
+{
+    "success" : true,
+    "alreadyRegistered" : true
+}
+```
+
+```json
+{
+    "success" : true,
+    "alreadyRegistered" : false
+}
+```
+
+Then the database provider will show up, and if set as the default will be used, you may need to send this request every 15-30 seconds depending on how often it restarts, just so that if things restart the database will be registered again, if it doesn't detect the set database in the config, it will default to flat files.
+
 ### Status API route
 This API route is basically to check that the database is running and get some basic information,
 the expected outcome of this is as following:
