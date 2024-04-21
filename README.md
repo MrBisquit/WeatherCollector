@@ -44,3 +44,7 @@ It also comes with:
 - API server + Authentication
 
 Plus, it's **modular**! Meaning you can pick and choose what you want to use, if you don't like Prisma, you can make your own database provider ([Find out how to](docs/custom-db.md)). If you don't want AI predictions, you don't have to have it. You don't have to have two Raspberry Pis (Although it's recommended), in fact, you don't even need any, you can use whatever supports this, though it may be a little challenging getting things working as I won't write documentation for any of that.
+
+## License
+
+WeatherCollector is open source and available under the MIT License.
