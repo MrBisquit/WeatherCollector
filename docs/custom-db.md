@@ -32,14 +32,14 @@ Method: `POST`
 | `link`        | Yes      | `string`   |
 
 Expected outcomes:
-```json
+```js
 {
     "success" : true,
     "alreadyRegistered" : true
 }
 ```
 
-```json
+```js
 {
     "success" : true,
     "alreadyRegistered" : false
@@ -52,7 +52,7 @@ Then the database provider will show up, and if set as the default will be used,
 This API route is basically to check that the database is running and get some basic information,
 the expected outcome of this is as following:
 
-```json
+```js
 {
     // To check that it's working
     "success": true,
@@ -70,7 +70,7 @@ the expected outcome of this is as following:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false,
     "err" : "500" // 500, etc...
@@ -90,7 +90,7 @@ Expected body (Raw JSON):
 | `dp`    | No       | `number`   |
 
 Expected output:
-```json
+```js
 {
     "data" : [
         // This is just an example of what the data should look like
@@ -121,7 +121,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false, // If the query was successful
     "err" : "404" // 404, 500, etc...
@@ -141,7 +141,7 @@ Expected body (Raw JSON):
 | `dp`    | No       | `number`   |
 
 Expected output:
-```json
+```js
 {
     "data" : [
         // This is just an example of what the data should look like
@@ -165,7 +165,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false, // If the query was successful
     "err" : "404" // 404, 500, etc...
@@ -187,7 +187,7 @@ Expected body (Raw JSON):
 > If you do set the `dp` value, it will be either `{ "success" : true, "count" : 1}` or `{ "success" : false, "err" : "404" }`.
 
 Expected output:
-```json
+```js
 {
     "count" : 0, // The amount of datapoints found matching that query
 
@@ -197,7 +197,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false,
     "err" : "404" // 404, 500, etc...
@@ -219,7 +219,7 @@ Expected body (Raw JSON):
 > If you do set the `dp` value, it will be either `{ "success" : true, "count" : 1}` or `{ "success" : false, "err" : "404" }`.
 
 Expected output:
-```json
+```js
 {
     "count" : 0, // The amount of images found matching that query
 
@@ -229,7 +229,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false,
     "err" : "404" // 404, 500, etc...
@@ -254,7 +254,7 @@ Expected body (Raw JSON):
 | `wind_direction`  | Yes      | `number`   |
 
 Expected output:
-```json
+```js
 {
     "success": true // If setting the datapoint was successful
 }
@@ -262,7 +262,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false // If setting the datapoint was successful
 }
@@ -282,7 +282,7 @@ Expected body (Raw JSON):
 | `image` | Yes      | `string`   |
 
 Expected output:
-```json
+```js
 {
     "success": true // If setting the datapoint was successful
 }
@@ -290,7 +290,7 @@ Expected output:
 
 If there is an error, the expected output would be:
 
-```json
+```js
 {
     "success" : false // If setting the datapoint was successful
 }
