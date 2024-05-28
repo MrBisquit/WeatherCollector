@@ -20,9 +20,16 @@ This is the index of all of the API routes, so it's easier to understand what ev
 | Authentication       | `/api/login`                              | `GET`  | [authentication](/api/authentication.md) | Authenticates a user (And gives a token as well as a cookie), will probably be re-done before release |
 
 ## Internal API reference index
+If your setup is different, you will need to work out how this needs to be setup for it to work, it may need a little tweaking.
+
+### Inside Raspberry Pi
+Routes exposed to the internal network via another port (**Needs** to be accessible to the other Raspberry Pi taking photos and recieving data from your Weather HAT otherwise it **will not work**).
+Unless you have it set up differently and it's only running on one Raspberry Pi, in that case you need to make sure that they can communicate and that the port on the other Node.JS server is open so that your Weather HAT can send it data.
 
 | Section              | Route(s)       | Method | Links                                                    | Description                                                                         |
 | -------------------- | -------------- | ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | Database             | `/db/register` | `POST` | [internal/db/register](/api/internal/db/register.md)     | Registers a database provider (Needs to be done every so often in case it restarts) |
 | Data                 | `/send_data`   | `POST` | [internal/data/sending](/api/internal/data/sending.md)   | Sends data to the server to be processed and saved                                  |
 | Image (Part of data) | `/send_photo`  | `POST` | [internal/image/sending](/api/internal/image/sending.md) | Sends an image to the server to be processed and saved                              |
+
+### Outside Raspberry Pi
