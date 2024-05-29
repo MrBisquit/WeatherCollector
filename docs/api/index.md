@@ -26,10 +26,24 @@ If your setup is different, you will need to work out how this needs to be setup
 Routes exposed to the internal network via another port (**Needs** to be accessible to the other Raspberry Pi taking photos and recieving data from your Weather HAT otherwise it **will not work**).
 Unless you have it set up differently and it's only running on one Raspberry Pi, in that case you need to make sure that they can communicate and that the port on the other Node.JS server is open so that your Weather HAT can send it data.
 
+### Main part
+
 | Section              | Route(s)       | Method | Links                                                    | Description                                                                         |
 | -------------------- | -------------- | ------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | Database             | `/db/register` | `POST` | [internal/db/register](/api/internal/db/register.md)     | Registers a database provider (Needs to be done every so often in case it restarts) |
 | Data                 | `/send_data`   | `POST` | [internal/data/sending](/api/internal/data/sending.md)   | Sends data to the server to be processed and saved                                  |
 | Image (Part of data) | `/send_photo`  | `POST` | [internal/image/sending](/api/internal/image/sending.md) | Sends an image to the server to be processed and saved                              |
+
+### Database server
+| Section  | Route(s)                                    | Method | Links                                                                       | Description                                                |
+| -------- | ------------------------------------------- | ------ | --------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| Status   | `/`                                         | `GET`  | [internal/db_server/status](/api/internal/db_server/status.md)              | Fetches the status/stats of the database server            |
+| Database | `/query/data`                               | `POST` | [internal/db_server/query/data](/api/internal/db_server/query/data.md)      | Queries the database for data                              |
+| Database | `/query/images`                             | `POST` | [internal/db_server/query/images](/api/internal/db_server/query/images.md)  | Queries the database for images                            |
+| Database | `/query/data/count` or `/query/data/images` | `POST` | [internal/db_server/query/count.md](/api/internal/db_server/query/count.md) | Queries the database to get the count of datapoints/images |
+| Database | `/set/data`                                 | `POST` | [internal/db_server/set/data](/api/internal/db_server/set/data.md)          | Sets data in the database                                  |
+| Database | `/set/image`                                | `POST` | [internal/db_server/set/image](/api/internal/db_server/set/image.md)        | Sets an image in the database                              |
+
+### AI server
 
 ### Outside Raspberry Pi
