@@ -15,6 +15,9 @@ It has an AI model that automatically trains its self based on your data (Also o
 
 Will eventually have an app for computers and your phone that will allow a background process to continue to update the weather data (With your set interval) in a notification with alerts.
 
+## Links
+- [Trello board](https://trello.com/b/xfLWuEJb/weathercollector)
+
 ## Prerequisites
 Here's a list of things you'll need (* = Required)
 
