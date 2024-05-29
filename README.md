@@ -19,6 +19,7 @@ Will eventually have an app for computers and your phone that will allow a backg
 - [Trello board](https://trello.com/b/xfLWuEJb/weathercollector)
 - [Docs](/docs)
 - [API reference](/docs/api/index.md)
+- **[Getting started](/docs/getting-started.md)**
 
 ## Prerequisites
 Here's a list of things you'll need (* = Required)
