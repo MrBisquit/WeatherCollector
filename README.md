@@ -8,7 +8,7 @@
 > <br>If you have any questions, please DM or email me.
 >
 > (Rough) Progress for making the source-code available:
-> <progress value=15 max=100 />
+> ![Progress](https://progress-bar.dev/15/)
 
 # Open-Source weather station data collector software
 
