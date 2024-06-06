@@ -6,6 +6,9 @@
 > If you're wondering where the code is, I'm slowly going to be cleaning it up and building new bits onto it, since it was originally intended to be for personal-use, if you watch the repository hopefully it'll tell you when I add things to it.
 > <br><br>This may take a little while, so please be patient.
 > <br>If you have any questions, please DM or email me.
+>
+> (Rough) Progress for making the source-code available:
+> <progress value=15 max=100 />
 
 # Open-Source weather station data collector software
 
